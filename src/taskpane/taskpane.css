@@ -15,6 +15,16 @@
      margin: 0;
      padding: 0;
  }
+
+ #missingemailstitle{
+    color:red;
+    display: none;
+}
+
+#missingemailstext{
+    color:green;
+    word-break: break-all; 
+}
  
  .ms-welcome__header {
     padding: 20px;
@@ -85,11 +95,18 @@ button{
     border-style: none;
     background-color: #D20E33;
     color: white;
-    cursor: pointer;
     transition-duration: 0.4s;
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.6;
 }
 
   button:hover {
     background-color: #a82039; /* Green */
     color: white;
   }
+
+  #searchmissingemailstitle{
+    color:rgb(0, 55, 255);
+}
+
